@@ -26,8 +26,8 @@ jobs:
         run: |
           set -e
 
-          INPUT_URL="https://cdn.telugudub.store/Arya-2_(2009)_720p.mkv"
-          OUTPUT_FOLDER="arya2"
+          INPUT_URL="https://cdn.telugudub.store/Kantara_A_Legend_Chapter_1_(2025)_Telugu_HQ_HD_720p.mkv"
+          OUTPUT_FOLDER="kac1"
           mkdir -p "$OUTPUT_FOLDER"
           OUTPUT_PATH="$OUTPUT_FOLDER/playlist.m3u8"
 
@@ -68,7 +68,7 @@ jobs:
           git config --global user.name "pothabattulavinod"
           git config --global user.email "vinodyadavpothabattula666@gmail.com"
 
-          git add arya2
+          git add kac1
 
           if ! git diff-index --quiet HEAD; then
             git commit -m "Add HLS (video copy + Telugu 5.1 audio) [skip ci]"
